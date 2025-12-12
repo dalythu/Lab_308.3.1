@@ -19,6 +19,18 @@
 
 // Part 2: Prime Time
 
-for (let n = 1; n <= 10; n++) {
-    console.log(n);
+let n = 11
+let isPrime = true
+
+for (let i = 2; i < n; i++) {
+  if (n % i === 0) {
+    isPrime = false
+    break
+  }
+}
+
+if (isPrime) {
+  console.log(n + ' is prime')
+} else {
+  console.log(n + ' is NOT prime')
 }
